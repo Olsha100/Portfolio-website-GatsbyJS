@@ -1,0 +1,48 @@
+.layout {
+  background: #6dbbec;
+}
+
+header,
+main,
+footer {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar {
+  ul {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: inline;
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+    :hover {
+      font-weight: 400;
+    }
+
+    /* The pseudo element prevents shifting li elements while hovering. The pseudo element has the same content and hover style, so it 
+    pre-sets the width of the element and visibility: hidden hides the pseudo element from actual view. */
+
+    li::before {
+      display: block;
+      content: attr(id);
+      font-weight: 400;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  p {
+    margin-top: 5rem;
+    margin-bottom: 0;
+  }
+}
