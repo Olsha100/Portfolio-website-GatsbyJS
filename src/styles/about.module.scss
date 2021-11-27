@@ -1,0 +1,80 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "head-main head-main"
+    "image article-about"
+    "article-technologies article-technologies"
+    "article-my-it-experience article-my-it-experience";
+  justify-content: space-between;
+
+  #header-main {
+    grid-area: head-main;
+    margin-bottom: 3rem;
+  }
+
+  #article-about {
+    grid-area: article-about;
+    max-width: 35rem;
+    justify-self: center;
+  }
+
+  #article-technologies {
+    grid-area: article-technologies;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
+    margin: 2rem 0;
+    padding: 2rem;
+
+    ul {
+      margin: 2rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: space-between;
+      justify-items: center;
+      li {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin: 0.4rem 0rem;
+      }
+    }
+  }
+
+  #article-experience {
+    grid-area: article-my-it-experience;
+    display: grid;
+    grid-template-areas:
+      "head head head"
+      "paragraph paragraph paragraph"
+      "tech analytics business";
+    justify-content: space-between;
+    justify-items: center;
+
+    #article-experience-header {
+      grid-area: head;
+    }
+    #article-experience-paragraph {
+      grid-area: paragraph;
+    }
+    #article-experience-article-tech {
+      grid-area: tech;
+    }
+    #article-experience-article-analytics {
+      grid-area: analytics;
+    }
+    #article-experience-article-business {
+      grid-area: business;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    li {
+      width: 20rem;
+
+      padding: 0.6rem 0;
+      height: 4.4rem;
+      border-top: 1px solid white;
+    }
+  }
+}
