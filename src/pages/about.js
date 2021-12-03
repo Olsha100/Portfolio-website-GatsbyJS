@@ -24,8 +24,7 @@ const AboutMe = () => {
           </header>
           <p>
             In the summer of 2020, I decided to become a frontend developer.
-            Since then, I have been learning skills and writing web
-            applications. <br />I chose React as my main technology and the page
+            Since then, I have been learning skills and writing web applications. <br />I chose React as my main technology and the page
             you can see here was written with <strong>GatsbyJS</strong>.
           </p>
         </article>
