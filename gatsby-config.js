@@ -15,13 +15,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `commercial-projects`,
-        path: `${__dirname}/src/projects/commercial-projects/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `code-sandbox`,
         path: `${__dirname}/src/projects/code-sandbox/`,
       },
