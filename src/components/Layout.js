@@ -18,9 +18,10 @@ export default function Layout({ children }) {
             <li id="CODE SANDBOX">
               <Link to="/sandbox">CODE SANDBOX</Link>
             </li>
-            <li id="COMMERCIAL PROJECTS">
+            {/* <li id="COMMERCIAL PROJECTS">
               <Link to="/projects">COMMERCIAL PROJECTS</Link>
-            </li>
+            </li> */}
+
           </ul>
         </nav>
       </header>

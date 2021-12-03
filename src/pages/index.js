@@ -32,9 +32,9 @@ export default function Home() {
             <li className={styles.list__item}>
               <Link to="/sandbox">&rarr; CODE SANDBOX</Link>
             </li>
-            <li className={styles.list__item}>
+            {/* <li className={styles.list__item}>
               <Link to="/projects">&rarr; COMMERCIAL PROJECTS</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </section>
