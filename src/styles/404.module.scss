@@ -1,0 +1,15 @@
+.container {
+  min-height: 100vh;
+  background: #40abee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    font-size: 3rem;
+  }
+  p {
+    margin: 0.5rem;
+  }
+}

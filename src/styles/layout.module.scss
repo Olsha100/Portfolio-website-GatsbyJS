@@ -1,6 +1,7 @@
 .layout {
   background: #6dbbec;
   min-height: 100vh;
+  padding: 0 2rem;
 }
 
 header,
@@ -20,6 +21,7 @@ footer {
       display: inline;
       font-size: 1.3rem;
       font-weight: 300;
+      padding: 0 1rem;
     }
     :hover {
       font-weight: 400;

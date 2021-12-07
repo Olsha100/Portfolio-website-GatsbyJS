@@ -15,7 +15,7 @@ h3 {
   &__image-container {
     width: fit-content;
     position: relative;
-    margin: 2rem 0;
+    margin: 2rem auto;
   }
 
   &__image-layer {
@@ -33,6 +33,14 @@ h3 {
     gap: 1.3rem;
     border: 3px solid white;
     &:hover {
+      opacity: 100%;
+    }
+  }
+}
+
+@media (pointer: coarse) {
+  .project-grid {
+    &__image-layer {
       opacity: 100%;
     }
   }

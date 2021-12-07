@@ -9,51 +9,56 @@ $box-bg-color: #40abee;
 .container {
   min-height: 100vh;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-evenly;
 
+  .laptop-image {
+    width: $box-width;
+  }
   .box {
     background-color: $box-bg-color;
     opacity: 71%;
     width: $box-width;
-    min-height: $box-height;
+    min-width: max-content;
+    height: $box-height;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    margin: 1rem 2rem;
 
     &::before {
       content: "";
       width: $box-width;
       height: $box-height;
       position: absolute;
-      top: 15px;
-      left: -15px;
+      top: 1rem;
+      left: -1rem;
       opacity: 35%;
       background-color: $box-bg-color;
       border-radius: inherit;
     }
 
     .box__header {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        height: 1px;
-        width: 5rem;
-        background-color: white;
-      }
+      &::before,
       &::after {
         content: "";
         position: absolute;
         top: 50%;
-        right: 0;
         height: 1px;
         width: 5rem;
         background-color: white;
+        margin: 0 1.2rem;
+      }
+
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
       }
     }
   }
@@ -72,5 +77,11 @@ $box-bg-color: #40abee;
         font-weight: 400;
       }
     }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .container {
+    flex-direction: row;
   }
 }
