@@ -21,6 +21,7 @@ export default function Layout({ children }) {
             {/* <li id="COMMERCIAL PROJECTS">
               <Link to="/projects">COMMERCIAL PROJECTS</Link>
             </li> */}
+
           </ul>
         </nav>
       </header>

@@ -22,8 +22,7 @@ const AboutMe = () => {
             <h2>Hi, I am Bartosz! </h2>
           </header>
           <p>
-            In the summer of 2020, I decided to become a frontend developer.
-            Since then, I have been learning skills and writing web
+            In the summer of 2020, I decided to become a frontend developer. Since then, I have been learning skills and writing web
             applications. I chose React as my main technology and the page you
             can see here was written with <strong>GatsbyJS</strong>.
           </p>
