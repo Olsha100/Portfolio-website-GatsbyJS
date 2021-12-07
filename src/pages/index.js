@@ -11,7 +11,8 @@ export default function Home() {
         src="../images/laptop.png"
         alt="A laptop"
         placeholder="blurred"
-        width={470}
+        objectFit="contain"
+        className={styles.laptopImage}
       />
       <section className={styles.box}>
         <StaticImage
